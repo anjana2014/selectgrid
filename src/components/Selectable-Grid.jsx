@@ -6,11 +6,7 @@ const SelectableGrid = ({rows=15, cols=10}) => {
     
 
     const handleMouseUp = () => {
-        setTimeout(() => {
-          setIsMouseDown(false);
-          setSelectedBoxes([]);
-        }, 0);
-      };
+        setIsMouseDown(false);};
     const handleMouseDown=(boxNumber)=>{
         setIsMouseDown(true);
         setSelectedBoxes([boxNumber]);
